@@ -5,10 +5,11 @@ const mysql = require('mysql');
 // local mysql db connection
 
 const dbConn = mysql.createConnection({
-    host : 'localhost',
+    host : 'database-container',
     user : 'deloitte',
     password : 'deloitte@awesome',
-    database : 'todo-database'
+    database : 'todo-database',
+    port: '3306'
 });
 
 dbConn.connect(function(err) {

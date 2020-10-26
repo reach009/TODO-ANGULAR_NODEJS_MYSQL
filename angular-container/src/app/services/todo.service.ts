@@ -14,7 +14,7 @@ const httpOptions = {
   providedIn: 'root'
 })
 export class TodoService {
-  todosUrl:string = 'http://localhost:5000/api/v1/todos';
+  todosUrl:string = 'http://localhost:3000/api/v1/todos';
 
   constructor(private http:HttpClient) { }
 

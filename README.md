@@ -1,15 +1,18 @@
 # TODO-ANGULAR_NODEJS_MYSQL
 Simple todo web application which is built using Angular, NodeJS and MySQL
 
-## Angular 
+## Angular
 * Commands to run
     * npm install (first time)
     * ng serve --open (to run the project and automatically open the browser)
 
-# NodeJS
+## NodeJS
 * Commands to run
     * npm install (first time)
     * npm start (to run the server)
 
-# Database
+## Database
 Run all the scripts
+
+## Using Docker
+docker-compose up --build -d
