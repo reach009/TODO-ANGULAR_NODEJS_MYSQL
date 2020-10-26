@@ -44,10 +44,7 @@ exports.update = function (req, res) {
             message: "Please provide all required field",
         });
     } else {
-        Todo.update(req.params.id, new Todo(req.body), function (
-            err,
-            todo
-        ) {
+        Todo.update(req.params.id, new Todo(req.body), function (err,todo) {
             if (err) res.send(err);
             res.json({
                 error: false,
