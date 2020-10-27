@@ -16,7 +16,8 @@ services:
         restart: always
         links:
             - database # link this service to the database service
-
+        depends_on:
+            - database
     database: # name of the third service
         build: database-container # specify the directory of the Dockerfile
         command: --default-authentication-plugin=mysql_native_password
